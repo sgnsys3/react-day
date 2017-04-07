@@ -3,7 +3,8 @@ var path = require('path')
 
 module.exports = {
   entry: {
-    bundle: './resources/assets/js/index.js'
+    bundle: './resources/assets/js/index.js',
+    vendor: ['react', 'react-router', 'jquery', 'bootstrap']
   },
   output: {
     path: path.resolve('public'),
